@@ -86,7 +86,7 @@
 
 /* MOBILE */
 
-@media (max-width: 499px) {
+@media (max-width: 529px) {
   .header {
     padding: 20px;
     min-width: 100px;
@@ -133,7 +133,7 @@
 
 /* TABLET */
 
-@media (min-width: 500px) and (max-width: 1000px) {
+@media (min-width: 530px) and (max-width: 1000px) {
   .header {
     padding: 90px 50px 50px 50px;
   }
