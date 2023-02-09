@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url(../fonts/PlayfairDisplay-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'ProfileIcons';
+  src: url('../fonts/ProfileIcons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PlayfairDisplay', sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.00em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+/* Icons */ 
+
+[class*='icon-']:before{
+display: inline-block;
+ font-family: 'ProfileIcons';
+ font-style: normal;
+ font-weight: normal;
+ line-height: 1;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale
+}
+.icon-github:before{content:'\0041';}
+.icon-linkedin:before{content:'\0042';}
+.icon-twitter:before{content:'\0043';}
+.icon-open-in-new:before{content:'\0044';}
+.icon-phone-outline:before{content:'\0045';}
+.icon-email-outline:before{content:'\0046';}

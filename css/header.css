@@ -13,7 +13,7 @@
   bottom: 0;
   width: 130vw;
   height: 50vw;
-  transform: rotate(-10deg) translate(-5vw, -26vw);
+  transform: rotate(-10deg) translate(-10vw, -26vw);
   background-color: var(--header-bg-color);
   animation: 0.75s ease-out slide-down-headerbg;
   animation-iteration-count: 1;
@@ -76,7 +76,7 @@
 }
 
 .social-icons a {
-  color: inherit;
+  color: var(--social-icons-color);
 }
 
 .social-icons a:hover {
@@ -84,14 +84,60 @@
 }
 
 
+/* MOBILE */
+
+@media (max-width: 499px) {
+  .header {
+    padding: 20px;
+    min-width: 100px;
+  }  
+  .header-background {
+    width: 200vw;
+    height: 90vw;
+    transform: rotate(-30deg) translate(-20vw, -50vw);
+    animation: 0.75s ease-out slide-down-headerbg-mobile;
+    max-height: none;
+  }
+  .header-content {
+    max-height: none;
+  }
+  .profile_image_container {
+    position: relative;
+    margin: 0 auto;
+    box-shadow: none!important;
+  }
+  .profile_image {
+    width: 100%;
+    height: 90vh;
+    max-height: 100vw;
+    object-position: 50% 12%;
+  }
+  .header-text {
+    position: static;
+    padding-top: 20px;
+    box-shadow: none!important;
+  }
+  .header-text  h2{
+    text-align: center;
+  }
+  .social-icons {
+    font-size: 1.5em;
+    gap: 30px;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+
 /* TABLET */
 
-@media (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) {
   .header {
     padding: 90px 50px 50px 50px;
   }
   .header-background {
-    width: 130vw;
     height: 56vw;
   }  
   .header-content {

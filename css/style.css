@@ -1,6 +1,6 @@
-@import "./typography.css";
-@import "./icons.css";
+@import "./typography-icons.css";
 @import "./header.css";
+@import "./animations.css";
 
 :root {
   --accent: #596D48;
@@ -9,6 +9,7 @@
   --profile-title-color: #fff;
   --profile-image-boxshadow: rgba(0,0,0,0.2);
   --header-content-bg-color: #fff;
+  --social-icons-color: #222;
   --link-text-hover-color: #0891B2;
 }
 
@@ -21,44 +22,4 @@ body {
 
 .boxshadow {
   box-shadow: 0.3vw 0.3vw 5px var(--profile-image-boxshadow);
-}
-
-/* Mobile */
-@media(max-width: 499px) {
-  .header {
-    background-color: rgba(255,255,0,0.5);
-  }
-}
-
-/* Animations */
-@keyframes fadein-up
-{
-  from {
-    transform: translateY(10vw);
-    opacity: 0.85;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slide-down-headerbg
-{
-  from {
-    transform: rotate(-10deg) translate(-5vw, -36vw);
-  }
-  to {
-    transform: rotate(-10deg) translate(-5vw, -26vw);
-  }
-}
-
-@keyframes slide-left
-{
-  from {
-    transform: translateX(10vw);
-  }
-  to {
-    transform: translateX(0);
-  }
 }

@@ -1,0 +1,42 @@
+/* Animations */
+@keyframes fadein-up
+{
+  from {
+    transform: translateY(10vw);
+    opacity: 0.85;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down-headerbg
+{
+  from {
+    transform: rotate(-10deg) translate(-10vw, -36vw);
+  }
+  to {
+    transform: rotate(-10deg) translate(-10vw, -26vw);
+  }
+}
+
+@keyframes slide-down-headerbg-mobile
+{
+  from {
+    transform: rotate(-30deg) translate(-20vw, -60vw);
+  }
+  to {
+    transform: rotate(-30deg) translate(-20vw, -50vw);
+  }
+}
+
+@keyframes slide-left
+{
+  from {
+    transform: translateX(10vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
