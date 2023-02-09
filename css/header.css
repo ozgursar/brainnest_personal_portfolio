@@ -1,0 +1,83 @@
+.header {
+  position: relative;
+  padding: 2vw 3vw;
+  overflow: hidden;
+  border-bottom: 2px solid #000;
+}
+
+.header-background {
+  position: absolute;
+  z-index:-1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 130vw;
+  height: 50vw;
+  transform: rotate(-10deg) translate(-5vw, -26vw);
+  background-color: var(--header-bg-color);
+  animation: 0.75s ease-out 1slide-down-headerbg;
+  animation-iteration-count: 1;
+  max-height: 870px;
+}
+
+.header-content {
+  position: relative;
+  height: 32vw;
+  max-height: 550px;
+}
+
+.profile_image_container {
+  position: absolute;
+  z-index: 2;
+  line-height: 0;
+  animation: 0.75s ease-out fadein-up;
+  animation-iteration-count: 1;
+}
+
+.profile_image {
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  object-position: 50% 5%;
+  margin: 0;
+  padding: 0;
+  max-height: 500px;
+}
+
+.profile_title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  z-index: 3;
+  color: var(--profile-title-color);
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+}
+
+.header-text {
+  position: absolute;
+  z-index: 1;
+  left: 29vw;
+  top: 3vw;
+  padding: 2vw 3vw 1vw;
+  background-color: var(--header-content-bg-color);
+  animation: 0.75s ease-out slide-left;
+  animation-iteration-count: 1;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.social-icons a {
+  color: inherit;
+}
+
+.social-icons a:hover {
+  color: var(--link-text-hover-color);
+}
