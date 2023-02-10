@@ -1,6 +1,8 @@
 @import "./typography-icons.css";
-@import "./header.css";
 @import "./animations.css";
+@import "./style-header.css";
+@import "./style-main.css";
+@import "./style-footer.css";
 
 :root {
   --accent: #596D48;
@@ -21,5 +23,5 @@ body {
 }
 
 .boxshadow {
-  box-shadow: 0.3vw 0.3vw 5px var(--profile-image-boxshadow);
+  box-shadow: 0.3vw 0.3vw 8px var(--profile-image-boxshadow);
 }

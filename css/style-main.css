@@ -1,0 +1,30 @@
+.main {
+  padding: 2vw 3vw;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
+  gap: 25px;
+}
+
+.project {
+  background: #ffdc00;
+  min-height: 100px;
+}
+
+
+/* TABLET */
+@media (min-width: 530px) and (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+    gap: 20px
+  }
+}
+
+/* MOBILE */
+@media (max-width: 529px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}

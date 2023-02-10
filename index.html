@@ -9,17 +9,17 @@
   <title>Ozgur Sar - Personal Portfolio</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header-background boxshadow"></div>
+  <header class="header" aria-labelledby="profile-name">
+    <div class="header-background boxshadow" aria-hidden="true"></div>
     <section class="header-content">
       <figure class="profile_image_container boxshadow">
         <img src="./images/profile-picture.jpg" alt="Ozgur Sar holding certificate" class="profile_image" width="300" height="300">
         <figcaption class="profile_title">
-          <h1>Ozgur Sar</h1>
+          <h1 id="profile-name">Ozgur Sar</h1>
         </figcaption>
       </figure>
-      <div class="header-text boxshadow">
-        <h2>About me</h2>
+      <div class="header-text boxshadow" aria-labelledby="about">
+        <h2 id="about">About me</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe similique veniam aliquid, dolorum autem incidunt praesentium amet. Soluta delectus consequuntur illo veritatis quasi eveniet eligendi, quam est corrupti voluptatum.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse neque nam tempora, iusto cum velit nulla eveniet numquam fugit doloremque unde voluptatem nostrum obcaecati laborum dolore error cupiditate laboriosam accusamus.
         </p>
@@ -49,8 +49,28 @@
       </div>
     </section>
   </header>
-  <main>
-    <h2>My work</h2>
+  <main class="main" aria-labelledby="mywork">
+    <h2 id="mywork">My work</h2>
+    <section class="projects-container">
+      <article class="project">
+        PROJECT 1
+      </article>
+      <article class="project">
+        PROJECT 2
+      </article>
+      <article class="project">
+        PROJECT 3
+      </article>
+      <article class="project">
+        PROJECT 4
+      </article>
+      <article class="project">
+        PROJECT 5
+      </article>
+      <article class="project">
+        PROJECT 6
+      </article>
+    </section>
   </main>
   <footer>
     <h2>Contact me</h2>

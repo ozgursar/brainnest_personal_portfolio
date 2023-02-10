@@ -2,7 +2,6 @@
   position: relative;
   padding: 2vw 3vw;
   overflow: hidden;
-  border-bottom: 2px solid #000;
 }
 
 .header-background {
@@ -22,7 +21,7 @@
 
 .header-content {
   position: relative;
-  min-height: 32vw;
+  min-height: 34vw;
   max-height: 550px;
 }
 
