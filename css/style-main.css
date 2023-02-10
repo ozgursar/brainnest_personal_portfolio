@@ -1,5 +1,6 @@
 .main {
   padding: 2vw 3vw;
+  margin-bottom: 40px;
 }
 
 .projects-container {
@@ -58,10 +59,11 @@
 /* MOBILE */
 @media (max-width: 529px) {
   .main {
-    padding: 0 20px;
+    padding: 0 20px 100px;
   }
   .projects-container {
     grid-template-columns: 1fr;
+    gap: 55px;
   }
   .project-image {
     height: 45vw;
@@ -74,7 +76,7 @@
 /* TABLET */
 @media (min-width: 530px) and (max-width: 1000px) {
   .main {
-    padding: 0 50px;
+    padding: 0 50px 60px;
   }
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
