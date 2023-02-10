@@ -14,7 +14,7 @@
 @keyframes slide-down-headerbg
 {
   from {
-    transform: rotate(-10deg) translate(-10vw, -36vw);
+    transform: rotate(-10deg) translate(-10vw, -29vw);
   }
   to {
     transform: rotate(-10deg) translate(-10vw, -26vw);

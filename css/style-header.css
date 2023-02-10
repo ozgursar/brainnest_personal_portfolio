@@ -13,7 +13,7 @@
   width: 130vw;
   height: 50vw;
   transform: rotate(-10deg) translate(-10vw, -26vw);
-  background-color: var(--header-bg-color);
+  background-color: var(--accent);
   animation: 0.75s ease-out slide-down-headerbg;
   animation-iteration-count: 1;
   max-height: 870px;
@@ -21,7 +21,7 @@
 
 .header-content {
   position: relative;
-  min-height: 34vw;
+  min-height: 32vw;
   max-height: 550px;
 }
 
@@ -61,7 +61,7 @@
   z-index: 1;
   left: 29vw;
   top: 3vw;
-  padding: 2vw 3vw 1vw;
+  padding: 3vw 3vw 1vw;
   background-color: var(--header-content-bg-color);
   animation: 0.75s ease-out slide-left;
   animation-iteration-count: 1;
@@ -79,7 +79,7 @@
 }
 
 .social-icons a:hover {
-  color: var(--link-text-hover-color);
+  color: var(--accent);
 }
 
 
@@ -109,14 +109,15 @@
     width: 100%;
     height: 90vh;
     max-height: 100vw;
+    min-height: 480px;
     object-position: 50% 12%;
   }
   .header-text {
     position: static;
-    padding-top: 20px;
+    padding: 20px 0;
     box-shadow: none!important;
   }
-  .header-text  h2{
+  .header-text h2{
     text-align: center;
   }
   .social-icons {
@@ -171,5 +172,12 @@
   }
   .social-icons {
     display: none;
+  }
+}
+
+/* LARGE DESKTOP */
+@media (min-width: 1740px) {
+  .header-content {
+    min-height: 550px;
   }
 }

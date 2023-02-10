@@ -5,14 +5,13 @@
 @import "./style-footer.css";
 
 :root {
-  --accent: #596D48;
+  --accent: #0891B2;
   --body-text-color: #4E4E4E;
-  --header-bg-color: #0891B2;
   --profile-title-color: #fff;
-  --profile-image-boxshadow: rgba(0,0,0,0.2);
+  --profile-image-boxshadow: rgba(0,0,0,0.20);
   --header-content-bg-color: #fff;
   --social-icons-color: #222;
-  --link-text-hover-color: #0891B2;
+  --project-hover-bg-color: #dedede;
 }
 
 body {
@@ -23,5 +22,5 @@ body {
 }
 
 .boxshadow {
-  box-shadow: 0.3vw 0.3vw 8px var(--profile-image-boxshadow);
+  box-shadow: 0 1px 10px var(--profile-image-boxshadow);
 }
