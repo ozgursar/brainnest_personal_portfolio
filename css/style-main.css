@@ -6,19 +6,19 @@
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
-  gap: 35px;
+  gap: 30px;
 }
 
 .project {
-  min-height: 100px;
-  transition: all 0.3s ease-out 0.08s;
-  transition-property: transform, background-color, color;
+  transition: all 0.3s ease-in-out 0.08s;
+  transition-property: transform filter;
+  background-color: var(--project-bg-color);
+  animation: 0.75s ease-in-out project-entrance;
 }
 
 .project:hover {
-  background-color: var(--project-hover-bg-color);
   transform: translateY(-1vw);
-  color: #000;
+  filter: brightness(85%);
 }
 
 .project-image {
@@ -80,6 +80,7 @@
   }
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+    gap: 25px;
   }
   .project-image {
     height: 25vw;

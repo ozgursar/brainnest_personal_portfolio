@@ -1,0 +1,55 @@
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Display lightbox when it is the target (id hash in URL) */
+.lightbox:target {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.lightbox span {
+  position: relative;
+  display: block;
+  width: 70vw;
+  height: 50vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lightbox span::after {
+  content: url('../images/close-box-outline.svg');
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+/* MOBILE */
+@media (max-width: 529px) {
+  .lightbox span {
+    width: 90vw;
+    height: 63vw;
+  }
+}
+
+/* TABLET */
+@media (min-width: 530px) and (max-width: 1000px) {
+  .lightbox span {
+    width: 80vw;
+    height: 58vw;
+  }
+}

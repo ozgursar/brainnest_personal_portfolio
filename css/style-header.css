@@ -14,7 +14,7 @@
   height: 50vw;
   transform: rotate(-10deg) translate(-10vw, -26vw);
   background-color: var(--accent);
-  animation: 0.75s ease-out slide-down-headerbg;
+  animation: 0.75s ease-in-out slide-down-headerbg;
   animation-iteration-count: 1;
   max-height: 870px;
 }
@@ -29,7 +29,7 @@
   position: absolute;
   z-index: 2;
   line-height: 0;
-  animation: 0.75s ease-out fadein-up;
+  animation: 0.75s ease-in-out fadein-up;
   animation-iteration-count: 1;
 }
 
@@ -63,7 +63,7 @@
   top: 3vw;
   padding: 3vw 3vw 1vw;
   background-color: var(--header-content-bg-color);
-  animation: 0.75s ease-out slide-left;
+  animation: 0.75s ease-in-out slide-left;
   animation-iteration-count: 1;
 }
 
@@ -94,7 +94,7 @@
     width: 200vw;
     height: 90vw;
     transform: rotate(-30deg) translate(-20vw, -50vw);
-    animation: 0.75s ease-out slide-down-headerbg-mobile;
+    animation: 0.75s ease-in-out slide-down-headerbg-mobile;
     max-height: none;
   }
   .header-content {
