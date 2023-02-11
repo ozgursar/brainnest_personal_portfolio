@@ -103,7 +103,6 @@
   .profile_image_container {
     position: relative;
     margin: 0 auto;
-    box-shadow: none!important;
   }
   .profile_image {
     width: 100%;
