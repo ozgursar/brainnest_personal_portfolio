@@ -28,12 +28,12 @@
 .profile_image_container {
   position: absolute;
   z-index: 2;
-  line-height: 0;
   animation: 0.75s ease-in-out fadein-up;
   animation-iteration-count: 1;
 }
 
 .profile_image {
+  display: block;
   width: 30vw;
   height: 30vw;
   object-fit: cover;
